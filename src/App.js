@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Home from './pages/Home';
+import Logo from './assets/logo.png';
 
 function App() {
   const [hide, sethide] = useState(true)
@@ -13,7 +14,7 @@ function App() {
 
      <header className='absolute top-0 w-full z-10'>
      <nav id="navbar">
-        <div id="logo">logo</div>
+  <div id="logo"><img src={Logo} alt='logo' className='px-1'/> <span className=' sm:hidden'>SalvadorLekan</span> </div>
         <div id="lg-menu">
                 <ul>
                     <li><a href="/">About</a></li>

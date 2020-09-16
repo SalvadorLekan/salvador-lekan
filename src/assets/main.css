@@ -18879,8 +18879,9 @@ a:hover{
 }
 
 #logo{
+  display: flex;
   padding: .25em;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 

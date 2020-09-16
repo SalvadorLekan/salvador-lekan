@@ -1,43 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Home from './pages/Home';
-import Logo from './assets/logo.png';
+import Exp from './pages/Exp';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Projects from './pages/Projects';
+import Header from './pages/Header';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
-  const [hide, sethide] = useState(true)
+  
 
 
   return (
-    <div className="container h-screen relative bg-blue-400 flex justify-center">
-     
-     <Home/>
+    <BrowserRouter>
+      <div className="container h-screen relative bg-blue-400 flex justify-center">
+      
+      <Route exact path='/' component={Home}/>
+      <Route exact path='/experience' component={Exp}/>
+      <Route exact path='/contact' component={Contact}/>
+      <Route exact path='/about' component={About}/>
+      <Route exact path='/projects' component={Projects}/>
+
+      
 
 
-     <header className='absolute top-0 w-full z-10'>
-     <nav id="navbar">
-  <div id="logo"><img src={Logo} alt='logo' className='px-1'/> <span className=' sm:hidden'>SalvadorLekan</span> </div>
-        <div id="lg-menu">
-                <ul>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Experience</a></li>
-                    <li><a href="/">Work</a></li>
-                    <li><a href="/">Contact</a></li>
-                    <li><a href="/">Resume</a></li>
-                </ul>
-            <div id="toggler" className='animate-shake' onClick={()=>{sethide(false)}}>&#9776;</div>
-        </div>
-    </nav>
-    <div id="sm-menu" className={hide?"hide":''}>
-        <div id="hider" onClick={()=>{sethide(true)}}>&times;</div>
-        <ul>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Experience</a></li>
-            <li><a href="/">Work</a></li>
-            <li><a href="/">Contact</a></li>
-            <li><a href="/">Resume</a></li>
-        </ul>
-    </div>
-     </header>
-    </div>
+      <Header/>
+      </div>
+    </BrowserRouter>
   );
 }
 

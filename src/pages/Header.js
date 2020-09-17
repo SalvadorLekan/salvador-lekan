@@ -1,14 +1,14 @@
 import React,{useState} from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from '../assets/logo.png';
 
 
 function Header() {
     const [hide, sethide] = useState(true)
     return (
-        <header className='px-2 pt-2 absolute top-0 w-full z-10'>
+        <header className='px-2 pt-0 absolute top-0 w-full z-10'>
      <nav id="navbar">
-  <div id="logo"><img src={Logo} alt='logo' className='pr-1'/> <span className=' sm:hidden'>SalvadorLekan</span> </div>
+  <Link to='/' className='hidden md:block' id="logo"><img src={Logo} alt='logo' className='pr-1'/> <span className=' sm:hidden'>SalvadorLekan</span> </Link>
         <div id="lg-menu">
                 <ul>
                     

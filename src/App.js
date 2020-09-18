@@ -13,7 +13,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="container min-h-screen relative bg-blue-200 px-4 py-0 flex justify-center">
+      <div className="container min-h-screen relative bg-blue-200 px-6 py-0 flex justify-center">
       
       <Route exact path='/' component={Home}/>
       <Route exact path='/experience' component={Exp}/>

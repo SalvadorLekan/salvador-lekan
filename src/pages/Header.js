@@ -1,10 +1,13 @@
-import React,{useState} from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import gsap from 'gsap/gsap-core';
+import React,{useState,useRef} from 'react'
+import { Link, NavLink, useHistory } from 'react-router-dom';
 import Logo from '../assets/logo.png';
 
 
 function Header() {
+    const history=useHistory().location.pathname
     const [hide, sethide] = useState(true)
+    const ref = useRef(null)
     return (
         <header className='px-2 pt-0 absolute top-0 w-full z-10'>
      <nav id="navbar">
@@ -18,12 +21,12 @@ function Header() {
                     <li><NavLink to="/contact" activeStyle={{fontWeight: "bold",color: "navy"}}>Contact</NavLink></li>
                     <li><NavLink onClick={e=>e.preventDefault()} className='box-border border-dashed border-4 border-pink-800 rounded-full' to="/resume" activeStyle={{fontWeight: "bold",color: "navy"}}>Resume</NavLink></li>
                 </ul>
-            <div id="toggler" className='animate-shake' onClick={()=>{sethide(false)}}>&#9776;</div>
+            <div id="toggler" className={history==='/'?'animate-shake':''} onClick={()=>{sethide(false);gsap.from(ref.current.children,{duration:1,stagger:.1,x:300})}}>&#9776;</div>
         </div>
     </nav>
     <div id="sm-menu" className={hide?"hide":''}>
         <div id="hider" onClick={()=>{sethide(true)}}>&times;</div>
-        <ul>
+        <ul ref={el=>ref.current=el}>
             <li><NavLink to="/about" activeStyle={{fontWeight: "bold",color: "navy"}}>About</NavLink></li>
             <li><NavLink to="/exp" activeStyle={{fontWeight: "bold",color: "navy"}}>Experience</NavLink></li>
             <li><NavLink to="/projects" activeStyle={{fontWeight: "bold",color: "navy"}}>Work</NavLink></li>

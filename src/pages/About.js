@@ -11,7 +11,7 @@ function About() {
                     <p>I am also fluent in frameworks and libraries like SASS, React, Redux, Bootstrap, GSAP and TailwindCSS.</p> 
                 </section>
                 <section>
-                    <p className='sm:text-2xl font-semibold xl:text-3xl'>
+                    <p className='text-xl sm:text-2xl font-semibold xl:text-3xl'>
                         Languages.
                     </p>
                     <div className='flex flex-wrap justify-evenly'>

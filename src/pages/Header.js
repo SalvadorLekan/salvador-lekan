@@ -11,7 +11,7 @@ function Header() {
     return (
         <header className='px-2 pt-0 absolute top-0 w-full z-10'>
      <nav id="navbar">
-  <Link to='/' className='hidden md:block' id="logo"><img src={Logo} alt='logo' className='pr-1'/> <span className=' sm:hidden'>SalvadorLekan</span> </Link>
+  <Link to='/' className='flex p-1 text-xl font-bold' id="logo"><img src={Logo} alt='logo' className='pr-1'/> <span className=' sm:hidden'>SalvadorLekan</span> </Link>
         <div id="lg-menu">
                 <ul>
                     

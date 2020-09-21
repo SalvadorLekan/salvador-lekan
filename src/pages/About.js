@@ -27,7 +27,7 @@ function About() {
                     <p>I am also fluent in frameworks and libraries like SASS, React, Redux, Bootstrap, GSAP and TailwindCSS.</p> 
                 </section>
                 <section>
-                    <p className='text-xl sm:text-2xl font-semibold xl:text-3xl'>
+                    <p className='my-3 text-xl sm:text-2xl font-semibold xl:text-3xl'>
                         Languages.
                     </p>
                     <div className='flex flex-wrap justify-evenly'>
@@ -37,7 +37,7 @@ function About() {
                     </div>
                 </section>
                 <section>
-                    <p className='text-xl sm:text-2xl font-semibold xl:text-3xl'>
+                    <p className='my-3 text-xl sm:text-2xl font-semibold xl:text-3xl'>
                         Frameworks.
                     </p>
                     <div className='flex flex-wrap justify-evenly'>
@@ -50,10 +50,10 @@ function About() {
                     </div>
                 </section>
                 <section>
-                    <p className='text-xl sm:text-2xl font-bold xl:text-3xl'>
+                    <p className='my-3 text-xl sm:text-2xl font-bold xl:text-3xl'>
                         Skills.
                     </p>
-                    <p className='text-xl sm:text-2xl font-serif pt-1'>A result and detail oriented developer who is skilled in making websites accessible to all people. <br/> A team player who is open-minded to new technologies and ideas. <br/> An avid learner with the intention of building solutions to real life problems.</p>
+                    <p className='my-3 text-xl sm:text-2xl font-serif pt-1'>A result and detail oriented developer who is skilled in making websites accessible to all people. <br/> A team player who is open-minded to new technologies and ideas. <br/> An avid learner with the intention of building solutions to real life problems.</p>
                     <div className='flex flex-wrap justify-evenly'>
                         <section className='flex flex-col items-center'><DiResponsive className='text-6xl text-purple-700'/><p className='text-xl sm:text-2xl sm:font-bold'>Responsiveness</p></section>
                         <section className='flex flex-col items-center'><ImAccessibility className='text-6xl text-purple-700'/><p className='text-xl sm:text-2xl sm:font-bold'>Accessibility</p></section>

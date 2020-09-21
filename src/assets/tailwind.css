@@ -90,8 +90,7 @@ ul{
     #sm-menu{
         width: 250px;
         transition: transform 1s ease;
-        background: #fef;
-        @apply flex h-screen flex-col fixed top-0 right-0 bottom-0;
+        @apply flex h-screen flex-col fixed top-0 right-0 bottom-0 bg-gray-200;
     }
     #sm-menu ul{
         @apply flex-col flex items-center;

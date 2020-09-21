@@ -18936,7 +18936,6 @@ ul{
   #sm-menu{
     width: 250px;
     transition: transform 1s ease;
-    background: #fef;
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -18944,6 +18943,9 @@ ul{
     top: 0;
     right: 0;
     bottom: 0;
+    --bg-opacity: 1;
+    background-color: #edf2f7;
+    background-color: rgba(237, 242, 247, var(--bg-opacity));
   }
 
   #sm-menu ul{

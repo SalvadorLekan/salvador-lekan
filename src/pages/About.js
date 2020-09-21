@@ -30,7 +30,7 @@ function About() {
                     <p className='my-3 text-xl sm:text-2xl font-semibold xl:text-3xl'>
                         Languages.
                     </p>
-                    <div className='flex flex-wrap justify-evenly'>
+                    <div className='flex flex-wrap my-3 justify-evenly'>
                         <section className='flex flex-col items-center'><SiHtml5 className='text-6xl text-red-400'/><p className='text-xl sm:text-2xl sm:font-semibold'>HTML5</p></section>
                         <section className='flex flex-col items-center'><SiCss3 className='text-6xl text-blue-600'/><p className='text-xl sm:text-2xl sm:font-semibold'>CSS3</p></section>
                         <section className='flex flex-col items-center'><SiJavascript className='text-6xl text-yellow-400'/><p className='text-xl sm:text-2xl sm:font-semibold'>ES6</p></section>
@@ -40,7 +40,7 @@ function About() {
                     <p className='my-3 text-xl sm:text-2xl font-semibold xl:text-3xl'>
                         Frameworks.
                     </p>
-                    <div className='flex flex-wrap justify-evenly'>
+                    <div className='flex flex-wrap my-3 justify-evenly'>
                         <section className='flex flex-col items-center'><SiSass className='text-6xl text-red-300'/><p className='text-xl sm:text-2xl sm:font-semibold'>SASS</p></section>
                         <section className='flex flex-col items-center'><SiReact className='text-6xl text-blue-900'/><p className='text-xl sm:text-2xl sm:font-bold'>React</p></section>
                         <section className='flex flex-col items-center'><SiGreensock className='text-6xl text-green-600'/><p className='text-xl sm:text-2xl sm:font-bold'>GSAP</p></section>
@@ -54,7 +54,7 @@ function About() {
                         Skills.
                     </p>
                     <p className='my-3 text-xl sm:text-2xl font-serif pt-1'>A result and detail oriented developer who is skilled in making websites accessible to all people. <br/> A team player who is open-minded to new technologies and ideas. <br/> An avid learner with the intention of building solutions to real life problems.</p>
-                    <div className='flex flex-wrap justify-evenly'>
+                    <div className='flex flex-wrap my-3 justify-evenly'>
                         <section className='flex flex-col items-center'><DiResponsive className='text-6xl text-purple-700'/><p className='text-xl sm:text-2xl sm:font-bold'>Responsiveness</p></section>
                         <section className='flex flex-col items-center'><ImAccessibility className='text-6xl text-purple-700'/><p className='text-xl sm:text-2xl sm:font-bold'>Accessibility</p></section>
                         <section className='flex flex-col items-center'><SiGithub className='text-6xl text-black'/><p className='text-xl sm:text-2xl sm:font-bold'>Team Projects</p></section>

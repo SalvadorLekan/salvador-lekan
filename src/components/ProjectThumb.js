@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProjectThumb({small,big,note,alt,link}) {
     return (
-        <div className='max-w-full grid my-2 shadow-xl md:shadow-2xl rounded-lg text-center hover:shadow-lg' onClick={()=>{
+        <div className='max-w-full grid my-5 shadow-xl md:shadow-2xl rounded-lg text-center hover:shadow-lg' onClick={()=>{
              window.location = link; return null;
         }}>
             <picture>

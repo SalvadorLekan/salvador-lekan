@@ -91,7 +91,7 @@ ul{
         width: 250px;
         transition: transform 1s ease;
         background: #fef;
-        @apply flex h-screen flex-col absolute top-0 right-0;
+        @apply flex h-screen flex-col fixed top-0 right-0 bottom-0;
     }
     #sm-menu ul{
         @apply flex-col flex items-center;
@@ -114,4 +114,10 @@ ul{
   * {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+  }
+  input:focus,textarea:focus{
+      @apply shadow-outline outline-none 
+  }
+  input,textarea{
+      @apply my-1 box-border p-2 rounded-lg
   }

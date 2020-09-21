@@ -19,19 +19,19 @@ function Header() {
                     <li><NavLink to="/exp" activeStyle={{fontWeight: "bold",color: "navy"}}>Experience</NavLink></li>
                     <li><NavLink to="/projects" activeStyle={{fontWeight: "bold",color: "navy"}}>Work</NavLink></li>
                     <li><NavLink to="/contact" activeStyle={{fontWeight: "bold",color: "navy"}}>Contact</NavLink></li>
-                    <li><NavLink onClick={e=>e.preventDefault()} className='box-border border-dashed border-4 border-pink-800 rounded-full' to="/resume" activeStyle={{fontWeight: "bold",color: "navy"}}>Resume</NavLink></li>
+                    {/* <li><NavLink onClick={e=>e.preventDefault()} className='box-border border-SOLID border-4 border-pink-800 rounded-full' to="/resume" activeStyle={{fontWeight: "bold",color: "navy"}}>Resume</NavLink></li> */}
                 </ul>
             <div id="toggler" className={history==='/'?'animate-shake':''} onClick={()=>{sethide(false);gsap.from(ref.current.children,{duration:1,stagger:.1,x:300})}}>&#9776;</div>
         </div>
     </nav>
-    <div id="sm-menu" className={hide?"hide":''}>
-        <div id="hider" onClick={()=>{sethide(true)}}>&times;</div>
+    <div id="sm-menu" className={hide?"hide":''} onClick={()=>{sethide(true)}}>
+        <div id="hider">&times;</div>
         <ul ref={el=>ref.current=el}>
             <li><NavLink to="/about" activeStyle={{fontWeight: "bold",color: "navy"}}>About</NavLink></li>
             <li><NavLink to="/exp" activeStyle={{fontWeight: "bold",color: "navy"}}>Experience</NavLink></li>
             <li><NavLink to="/projects" activeStyle={{fontWeight: "bold",color: "navy"}}>Work</NavLink></li>
             <li><NavLink to="/contact" activeStyle={{fontWeight: "bold",color: "navy"}}>Contact</NavLink></li>
-            <li><NavLink className='border-dashed border-4 border-pink-800 rounded-full' to="/">Resume</NavLink></li>
+            {/* <li><NavLink onClick={e=>e.preventDefault()} className='border-solid border-4 border-pink-800 rounded-full' to="/">Resume</NavLink></li> */}
         </ul>
     </div>
      </header>

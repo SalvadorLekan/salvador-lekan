@@ -1,8 +1,10 @@
 import React from 'react'
 
-function ProjectThumb({small,big,note,alt}) {
+function ProjectThumb({small,big,note,alt,link}) {
     return (
-        <div className='max-w-full grid my-2'>
+        <div className='max-w-full grid my-2 shadow-xl md:shadow-2xl rounded-lg text-center hover:shadow-lg' onClick={()=>{
+             window.location = link; return null;
+        }}>
             <picture>
                 <source media='(max-width:650px)' srcSet={small}/>
                 <source media='(min-width:651px)' srcSet={big}/>

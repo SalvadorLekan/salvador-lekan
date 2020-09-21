@@ -18940,9 +18940,10 @@ ul{
     display: flex;
     height: 100vh;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
+    bottom: 0;
   }
 
   #sm-menu ul{
@@ -18973,6 +18974,19 @@ ul{
 * {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+input:focus,textarea:focus{
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  outline: 0
+}
+
+input,textarea{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border-radius: 0.5rem
 }
 
 @media (min-width: 640px){

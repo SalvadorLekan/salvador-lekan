@@ -19,7 +19,7 @@ function About() {
 
 
     return (
-        <div className='pt-12'>
+        <div className='pt-16'>
             <article ref={el=>ref.current=el} className='min-h-full flex flex-col'>
                 <section className='inline-block self-start'><span className='text-xl sm:text-2xl font-semibold xl:text-3xl'>Salvador AbdulRahman Lekan</span><span ref={el=>under.current=el} className=' block w-full bg-red-600 h-1'></span></section>
                 <section className='text-xl sm:text-2xl font-serif pt-1'>

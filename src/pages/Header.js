@@ -16,8 +16,9 @@ function Header() {
                 <ul>
                     
                     <li><NavLink to="/about" activeStyle={{fontWeight: "bold",color: "navy"}}>About</NavLink></li>
-                    <li><NavLink to="/exp" activeStyle={{fontWeight: "bold",color: "navy"}}>Experience</NavLink></li>
-                    <li><NavLink to="/projects" activeStyle={{fontWeight: "bold",color: "navy"}}>Work</NavLink></li>
+                    {/* <li><NavLink to="/exp" activeStyle={{fontWeight: "bold",color: "navy"}}>Experience</NavLink></li> */}
+                    <li><a href='/blog' target='_blank'>Blog</a></li>
+                    <li><NavLink to="/projects" activeStyle={{fontWeight: "bold",color: "navy"}}>Work</NavLink></li>                    
                     <li><NavLink to="/contact" activeStyle={{fontWeight: "bold",color: "navy"}}>Contact</NavLink></li>
                     {/* <li><NavLink onClick={e=>e.preventDefault()} className='box-border border-SOLID border-4 border-pink-800 rounded-full' to="/resume" activeStyle={{fontWeight: "bold",color: "navy"}}>Resume</NavLink></li> */}
                 </ul>
@@ -28,7 +29,8 @@ function Header() {
         <div id="hider">&times;</div>
         <ul ref={el=>ref.current=el}>
             <li><NavLink to="/about" activeStyle={{fontWeight: "bold",color: "navy"}}>About</NavLink></li>
-            <li><NavLink to="/exp" activeStyle={{fontWeight: "bold",color: "navy"}}>Experience</NavLink></li>
+            {/* <li><NavLink to="/exp" activeStyle={{fontWeight: "bold",color: "navy"}}>Experience</NavLink></li> */}
+            <li><a href='/blog' target='_blank'>Blog</a></li>
             <li><NavLink to="/projects" activeStyle={{fontWeight: "bold",color: "navy"}}>Work</NavLink></li>
             <li><NavLink to="/contact" activeStyle={{fontWeight: "bold",color: "navy"}}>Contact</NavLink></li>
             {/* <li><NavLink onClick={e=>e.preventDefault()} className='border-solid border-4 border-pink-800 rounded-full' to="/">Resume</NavLink></li> */}

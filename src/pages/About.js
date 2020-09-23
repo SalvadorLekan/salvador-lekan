@@ -2,16 +2,17 @@ import React, { useEffect, useRef } from 'react'
 import { SiHtml5,
     SiCss3,SiJavascript,SiSass,SiBootstrap,SiReact,SiRedux,
     SiTailwindcss,SiGreensock,SiGithub } from 'react-icons/si'
-import gsap from 'gsap'
 import { ImAccessibility } from 'react-icons/im'
 import { DiResponsive } from 'react-icons/di'
+import tl from '../tl'
+
 
 function About() {
     const ref = useRef(null)
     const under= useRef(null)
     useEffect(() => {
-        gsap.from(ref.current.children,{duration:2,stagger:.5,opacity:0,y:20});
-        gsap.from(under.current,{duration:4, css:{width:0}})
+        tl.from(ref.current.children,{duration:2,stagger:.5,opacity:0,y:20})
+        .from(under.current,{duration:.5, css:{width:0}})
     }, [])
 
 
@@ -22,7 +23,7 @@ function About() {
         <div className='pt-16'>
             <article ref={el=>ref.current=el} className='min-h-full flex flex-col'>
                 <section className='inline-block self-start'><span className='text-xl sm:text-2xl font-semibold xl:text-3xl'>Salvador AbdulRahman Lekan</span><span ref={el=>under.current=el} className=' block w-full bg-red-600 h-1'></span></section>
-                <section className='text-xl sm:text-2xl font-serif pt-1'>
+                <section className='text-xl sm:text-2xl font-serif pt-3'>
                     <p>A front-end developer fluent in HTML5, CSS3, ES6 syntax.</p>
                     <p>I am also fluent in frameworks and libraries like SASS, React, Redux, Bootstrap, GSAP and TailwindCSS.</p> 
                 </section>

@@ -20,10 +20,7 @@ function App() {
       <Route exact path='/contact' component={Contact}/>
       <Route exact path='/about' component={About}/>
       <Route exact path='/projects' component={Projects}/>
-
-      
-
-
+      <Route exact path='/blog' component={()=>{window.location.href='https://bay.salvadorlekan.com.ng'}}/>
       <Header/>
       </div>
     </BrowserRouter>

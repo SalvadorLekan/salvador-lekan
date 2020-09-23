@@ -24,12 +24,12 @@ function Contact() {
       }
     const [state, setState] = useState({status:''})
     return (
-        <div className='grid place-items-center min-h-full'>
+        <div className='grid place-items-center min-h-full mt-16'>
             <form onSubmit={submitForm} action='https://formspree.io/xjvpvgwo' method='POST' className='rounded-lg bg-orange-200 flex flex-col shadow-md p-2 text-lg'>
                 <h2 className='font-bold text-center text-2xl text-blue-900'>Send A Message</h2>
                 <input name='name' type='text' placeholder='Name'/>
                 <input name='mail' type='email' placeholder='e-mail address'/>
-                <textarea name='message' placeholder='message' required/>
+                <textarea name='message' placeholder='message' className='h-64 w-64' required/>
                 <button type='submit' className='bg-blue-800 text-indigo-100 font-semibold rounded-lg hover:bg-blue-900 py-1 my-1 justify-self-center'>Send</button>
             </form>
             <div className={`text-center text-white rounded-lg pb-4 px-3 ${state.status==='SUCCESS'? 'border-green-800 bg-green-400':state.status==='ERROR'?'bg-red-300 border-red-900':'hidden'}`}>

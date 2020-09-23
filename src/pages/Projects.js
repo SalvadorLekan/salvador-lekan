@@ -1,4 +1,4 @@
-import gsap,{Power4} from 'gsap/gsap-core'
+import gsap, {Power4} from 'gsap/gsap-core'
 import React, { useEffect, useRef } from 'react'
 import { useHistory } from 'react-router-dom'
 import ProjectThumb from '../components/ProjectThumb'
